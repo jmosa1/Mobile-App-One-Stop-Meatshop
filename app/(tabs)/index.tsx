@@ -1,5 +1,7 @@
 import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
+import HomeScreen from './screens/HomeScreen';
+
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -7,7 +9,11 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
 
-export default function HomeScreen() {
+export default function Index() {
+  return <HomeScreen />;
+}
+
+/*export default function HomeScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -95,4 +101,4 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
-});
+});*/
